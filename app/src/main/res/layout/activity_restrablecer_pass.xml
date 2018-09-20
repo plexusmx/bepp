@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.RecoverPassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/text_indicaciones"
+            style="@style/Indicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Ingresa tu correo electrónico y te enviaremos un email con una nueva contraseña."
+            />
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_correo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_indicaciones"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            app:hintEnabled="false">
+
+            <EditText
+
+                android:id="@+id/text_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="mail@ejemplo.com"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+
+                android:drawableStart="@mipmap/icono_correo"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_recuperar"
+            android:layout_below="@+id/text_correo_layout"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:text="RESTABLECER CONTRASEÑA"
+            android:textColor="@color/blanco"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

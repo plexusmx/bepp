@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_below="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="16dp"
+            android:id="@+id/linearLayoutfgdf7">
+
+            <TextView
+                android:id="@+id/text_nombre_medicina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/bepp"
+                android:lineSpacingExtra="-4sp"
+                android:text="Ampicilina 30 MG"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="8dp"
+            android:id="@+id/linearLayoudtfg7">
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:id="@+id/linearLayffouefedtfg7">
+
+
+                <ImageView
+                    android:id="@+id/imageVidefewdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout2"
+                    android:src="@mipmap/icono_horas" />
+
+
+
+                <TextView
+                    style="@style/Texto"
+                    android:id="@+id/text_medicina_horas"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="c/6 hrs."
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+                android:layout_marginBottom="8dp"
+                android:id="@+id/linearLayffoudefetfg7">
+
+                <ImageView
+                    android:id="@+id/imageVidefeewdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout2"
+                    android:src="@mipmap/icono_dias" />
+
+                <TextView
+                    style="@style/Texto"
+                    android:id="@+id/text_medicina_dias"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="5 días"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Texto"
+                android:id="@+id/text_medcina_indicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Una pastilla antes de desayunar."
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

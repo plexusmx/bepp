@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bepp.com.bepp.activities.AlarmMainActivity">
+
+    <ListView
+        android:id="@+id/list_alarmas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_nva_alarma"
+        android:layout_alignParentStart="true">
+
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/button_detener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_nva_alarma"
+        android:layout_alignParentEnd="true"
+        android:background="@color/blanco"
+        android:text="Detener"
+
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/button_nva_alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar tratamiento"
+        android:background="@color/colorAccent"
+        android:textColor="@color/blanco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.RegistroPacienteActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_back_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_azul"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:id="@+id/image_back_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+
+            app:srcCompat="@mipmap/icono_regresar" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="116dp"
+        android:elevation="2dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/corners"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayoutmask"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tituloinicial"
+            style="@style/TTulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regístrate"
+            android:elevation="2dp"
+
+            android:layout_marginTop="64dp"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/text_tu_registro"
+            style="@style/Acciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/perla"
+            android:lineSpacingExtra="-4sp"
+            android:gravity="center_horizontal"
+            android:text="Tu registro se realizará como paciente"
+            android:layout_below="@+id/tituloinicial"
+            android:layout_marginTop="15dp" />
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_tu_registro"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="20"
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_apellidoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_nombre"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_apellidoPR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Apellido Paterno"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="15"
+
+
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_apellidoM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_apellidoP"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_apellidoM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Apellido Materno (Opcional)"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="15"
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:id="@+id/radios"
+
+            android:layout_below="@+id/layout_paciente_apellidoM">
+
+
+            <RadioButton
+                android:id="@+id/radio_button_masc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_weight="1"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radio_button_fem"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Femenino" />
+        </LinearLayout>
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radios"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+
+                android:drawableStart="@mipmap/icono_correo"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_movil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_correo"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_movil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Móvil"
+                android:inputType="number"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="13"
+                android:drawableStart="@mipmap/icono_movil"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/statusBlack"
+            android:id="@+id/layout_paciente_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/layout_paciente_movil"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:hintEnabled="false"
+            android:textColorHint="@color/pasive_color"
+            app:passwordToggleEnabled = "true"
+            app:passwordToggleTint="@color/pasive_color">
+            <EditText
+                android:id="@+id/text_paciente_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+
+                android:hint="Contraseña"
+                android:paddingRight="8dp"
+                android:padding="5dp"
+                android:minLines="1"
+                android:maxLines="1"
+                android:drawableStart="@mipmap/icono_contrase_a"
+                android:drawablePadding="6dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/statusBlack"
+            android:id="@+id/layout_paciente_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/layout_paciente_password"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:hintEnabled="false"
+            android:textColorHint="@color/pasive_color"
+            app:passwordToggleEnabled = "true"
+            app:passwordToggleTint="@color/pasive_color">
+            <EditText
+                android:id="@+id/text_paciente_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:drawableStart="@mipmap/icono_contrase_a"
+                android:drawablePadding="6dp"
+
+                android:hint="Repetir contraseña"
+                android:paddingRight="8dp"
+                android:padding="5dp"
+                android:minLines="1"
+                android:maxLines="1"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/check_aviso_privacidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:textSize="12sp"
+            android:checked="false"
+            android:layout_marginTop="16dp"
+            android:text="Al crear una cuenta BEPP, aceptas nuestros "
+            android:layout_below="@+id/layout_paciente_repassword"
+           />
+
+        <TextView
+            android:id="@+id/aviso_privacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/check_aviso_privacidad"
+            android:text="términos, condiciones y políticas de privacidad"
+            android:elevation="2dp"
+            android:textColor="@color/bepp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="-8dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_registro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="REGÍSTRARME"
+            android:enabled="true"
+            android:textColor="@color/blanco"
+            android:elevation="2dp"
+            android:background="@drawable/button_bg_rounded_disable_corners"
+            android:layout_below="@+id/aviso_privacidad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:elevation="2dp"
+        app:srcCompat="@mipmap/logo_bepp_blank"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

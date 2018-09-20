@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.DetalleRecetaActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/folio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/bepp"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end"
+            android:text="ID  "
+            />
+        <TextView
+            android:id="@+id/text_id_dereceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/bepp"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end"
+            android:text="91827"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exp"
+        android:layout_below="@+id/folio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            style="@style/Texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fecha de expedición"
+            />
+
+        <TextView
+            android:id="@+id/text_fecha_deexp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/perla"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="end"
+            android:text="05/01/2018"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ven"
+        android:layout_below="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            style="@style/Texto"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Fecha de vencimiento"
+            />
+
+        <TextView
+            android:id="@+id/text_fecha_deven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/perla"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="end"
+            android:text="12/01/2018"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            app:srcCompat="@mipmap/icono_paciente" />
+
+        <TextView
+            style="@style/Texto"
+            android:id="@+id/text_nombre_paciente"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:text="Claudia Renteria"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            app:srcCompat="@mipmap/icono_medico_sm" />
+
+        <TextView
+            style="@style/Texto"
+            android:id="@+id/text_nombre_doctor"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:text="Dr. Erick Nava Vilchis"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout_diagnostico"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            app:srcCompat="@mipmap/icono_diagnostico" />
+
+        <TextView
+            style="@style/Texto"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:text="Ver Diagnóstico"
+            />
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:id="@+id/linearLayout_medicamentos">
+
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+
+                android:layout_height="wrap_content"
+                android:text="Medicamentos"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:lineSpacingExtra="8sp"
+                android:text="Cantidad : "
+                android:textColor="@color/verde"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text_cantidad_medicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_weight="1"
+
+                android:lineSpacingExtra="8sp"
+                android:text="2"
+                android:layout_gravity="center_vertical"
+
+                android:textColor="@color/verde"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageVieddwdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout2"
+                app:srcCompat="@mipmap/icono_siguiente" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="false">
+
+
+            <ListView
+                android:id="@+id/list_receta_medicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_nva_facturacion">
+
+
+            </ListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_cotizar"
+            android:layout_width="256dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:text="Beppear"
+            android:textColor="@color/blanco"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            />
+
+
+        <!--<LinearLayout
+            android:layout_below="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:id="@+id/linearLayout_estudios">
+
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+
+                android:layout_height="wrap_content"
+                android:text="Estudios"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_estudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Cantidad : "
+                    android:textColor="@color/verde"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textVddfdiewestudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="1"
+
+                    android:lineSpacingExtra="8sp"
+                    android:text="1"
+                    android:layout_gravity="center_vertical"
+
+                    android:textColor="@color/verde"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imageVieddwdfestudios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout2"
+                    app:srcCompat="@mipmap/icono_siguiente" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout_estudios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_below="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:id="@+id/linearLayffoudtfg7estudios">
+
+                        <ImageView
+                            android:id="@+id/imageVidewdfestudios"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/linearLayout2"
+                            app:srcCompat="@mipmap/icono_diagnostico" />
+
+                        <TextView
+                            style="@style/Texto"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre del estudio XYZ"
+                            />
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/linearLayffoudtfg7estudios2">
+
+                    <ImageView
+                        android:id="@+id/imageVidewdfestudios2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout2"
+                        app:srcCompat="@mipmap/icono_medico_sm" />
+
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Tu médico recomienda en : "
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/linearLayffoudtfg7estudios3">
+
+                    <ImageView
+                        android:id="@+id/imageVidewdfestudios3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout2"
+                        app:srcCompat="@mipmap/icono_medico_sm" />
+
+
+
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="LABORATORIO CHOPO"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@mipmap/icono_inicio"
+
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_receta"
+            android:icon="@mipmap/icono_recetas"
+            android:title="Mis recetas" />
+        <item
+            android:id="@+id/nav_tratamiento"
+            android:icon="@mipmap/icono_tratamiento"
+            android:title="Tratamientos" />
+        <item
+            android:id="@+id/nav_historial"
+            android:icon="@mipmap/icono_historial"
+            android:title="Historial clínico" />
+        <item
+            android:id="@+id/nav_familiares"
+            android:icon="@mipmap/icono_familiares"
+            android:title="Amigos y familiares" />
+        <item
+        android:id="@+id/nav_doctores"
+        android:icon="@mipmap/icono_doctores"
+        android:title="Mis médicos" />
+
+        <item
+            android:id="@+id/nav_dir_medico"
+            android:icon="@mipmap/icono_directorio"
+            android:title="Directorio médico" />
+
+        <item
+            android:id="@+id/nav_tienda"
+            android:icon="@mipmap/icono_tienda"
+            android:title="Tienda" />
+        <item
+            android:id="@+id/nav_pagos"
+            android:icon="@mipmap/icono_pagos"
+            android:title="Historial de compra" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@mipmap/icono_configuraciones"
+            android:title="Configuraciones" />
+        <item
+            android:id="@+id/nav_atencion"
+            android:icon="@mipmap/icono_atencion_cliente"
+            android:title="Atención cliente" />
+        <item
+            android:id="@+id/nav_cerrar_session"
+            android:title="CERRAR SESIÓN" />
+
+
+    </group>
+
+
+</menu>

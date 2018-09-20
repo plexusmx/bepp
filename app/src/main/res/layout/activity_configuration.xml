@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.ConfigurationActivity">
+
+    <TextView
+        android:id="@+id/text_datosgenerales"
+        style="@style/IndicaciNLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos generales "
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_datos_generales"
+        android:layout_below="@+id/text_datosgenerales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_editar_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Editar perfil "
+                />
+
+            <ImageView
+                android:id="@+id/text_editar_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_pago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Método de pago"
+                />
+
+            <ImageView
+                android:id="@+id/img_pago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dirección de envío"
+                />
+
+            <ImageView
+                android:id="@+id/img_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_facturacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Datos de facturación"
+                />
+
+            <ImageView
+                android:id="@+id/img_facturacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:id="@+id/layout_lealtad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarjeta de lealtad"
+                />
+
+            <ImageView
+                android:id="@+id/img_lealtad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_datos_cuenta"
+        style="@style/IndicaciNLista"
+        android:layout_below="@+id/layout_datos_generales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos de la cuenta "
+        android:layout_marginStart="16dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_datos_cuenta"
+        android:layout_below="@+id/text_datos_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/lista_border"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/AccionesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cambiar contraseña"
+                />
+
+            <ImageView
+                android:id="@+id/img_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icono_siguiente" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

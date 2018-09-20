@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@color/blanco"
+        tools:context="bepp.com.bepp.activities.DetalleRecetaActivity">
+
+        <LinearLayout
+            android:id="@+id/layuot_pasos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="@color/blanco"
+                android:text="Paso 1 de 5"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layuot_pasos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/entrega_productos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrega de productos"
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_servicio_domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_rounded_corners_linear"
+            android:layout_margin="16dp"
+            android:text="SERVICIO A DOMICILIO"
+            android:textColor="@color/azulbepp" />
+
+       <Button
+            android:id="@+id/btn_recoger_farmacia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_rounded_corners_linear"
+            android:layout_margin="16dp"
+            android:text="RECOGER EN FARMACIA"
+            android:textColor="@color/azulbepp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5B80</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#9ACA4A</color>
+
+    <color name="azulbepp">#1B5B80</color>
+    <color name="negro">#1B5B80</color>
+        <color name="azul">#2397dc</color>
+        <color name="bepp">#1c5b80</color>
+        <color name="acento">#7ac1eb</color>
+        <color name="texto">#909faf</color>
+        <color name="oxford">#697d92</color>
+        <color name="perla">#c1cad3</color>
+        <color name="verdeclaro">#b1d671</color>
+        <color name="blanco">#ffffff</color>
+        <color name="azulcielo">#8edcf7</color>
+        <color name="accion">#4aabe5</color>
+        <color name="plumbago">#66b3df</color>
+        <color name="error">#fc9a9a</color>
+        <color name="verde">#9bca4a</color>
+    <color name="azulPlace">#b2edf9fe</color>
+    <color name="azul_desabilisato">#bcd9f1</color>
+    <color name="azul_border_desabilisato">#dfe3e8</color>
+
+    <color name="backgroundColor">#fff</color>
+    <color name="backgroundColorPress">#eceded</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha">#F2FFFFFF</color>
+    <color name="soft_grey">#ECEEEF</color>
+    <color name="mid_grey">#9199A1</color>
+    <color name="strong_grey">#50545A</color>
+    <color name="search_background">#0000</color>
+
+    <color name="error_inpt">#B71C1C</color>
+    <color name="pasive_color">#909faf</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen3">#eceded</color>
+    <color name="dot_dark_screen2">#eceded</color>
+    <color name="dot_dark_screen1">#eceded</color>
+    <color name="dot_dark_screen4">#eceded</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#b1d671</color>
+    <color name="dot_light_screen2">#b1d671</color>
+    <color name="dot_light_screen3">#b1d671</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>#eceded</item>
+        <item>#eceded</item>
+        <item>#eceded</item>
+        <item>#eceded</item>
+    </array>
+
+</resources>

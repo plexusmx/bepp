@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.daimajia.swipe.SwipeLayout
+xmlns:swipe="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/swipe_dato_laborales"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/blanco"
+swipe:leftEdgeSwipeOffset="0dp"
+swipe:rightEdgeSwipeOffset="0dp">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@color/backgroundColorPress"
+    android:gravity="center"
+    android:tag="Bottom3"
+    android:weightSum="0">
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nombre_hospital"
+        style="@style/IndicaciNLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos del consultorio"
+        android:background="@color/soft_grey"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icono_ubicacion_color"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            style="@style/Texto"
+            android:id="@+id/txt_direccion_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avenida San Fernando 482, Tlalpan Centro I, 14000 CDMX"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icono_horario"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            style="@style/Texto"
+            android:id="@+id/txt_horario_hospita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 a 18:00"
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

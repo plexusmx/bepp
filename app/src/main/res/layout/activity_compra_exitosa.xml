@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:background="@color/blanco"
+        android:layout_height="match_parent"
+        tools:context="bepp.com.bepp.activities.CompraExitosaActivity">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ilustraci_n_carrito"
+        android:layout_above="@+id/text_nombre_paciente"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/text_nombre_paciente"
+        style="@style/TTulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Felicidades Claudia!"
+        android:layout_above="@+id/text_pedido_camino"
+        />
+
+    <TextView
+        android:id="@+id/text_pedido_camino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/verdeclaro"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/text_compra_ahoro_pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/verde"
+        android:lineSpacingExtra="-6sp"
+        android:layout_below="@+id/text_nombre_paciente"
+        android:gravity="center_horizontal"
+        android:text="Con tu compra has ahorrado"
+        />
+
+    <TextView
+        android:id="@+id/text_compra_ahoro_cantidad"
+        android:layout_below="@+id/text_compra_ahoro_pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/verdeclaro"
+        android:lineSpacingExtra="-12sp"
+        android:gravity="center_horizontal"
+        android:text="$34.50"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/texto_felicidades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/text_compra_ahoro_cantidad"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/texto"
+        android:lineSpacingExtra="-4sp"
+        android:gravity="center_horizontal"
+        android:text="Gracias por comprar a través de BEPP"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/texto_felicidades"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/texto"
+        android:lineSpacingExtra="-4sp"
+        android:gravity="center_horizontal"
+        android:text=" Best  Pharmacy Price"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/finalizar_cotizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/bepp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+
+        <TextView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blanco"
+            android:gravity="end"
+            android:text="CONTINUAR"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icono_siguiente_blanco"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

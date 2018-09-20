@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.FarmaciaRecetaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/san_pablo_med" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageVidf"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@mipmap/start_color_cal" />
+
+                <ImageView
+                    android:id="@+id/imagdfeVdgiew8"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@mipmap/start_color_cal" />
+                <ImageView
+                    android:id="@+id/imagdfefggView8"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@mipmap/start_color_cal" />
+
+                <ImageView
+                    android:id="@+id/imfagdfeView8"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@mipmap/start_color_cal" />
+
+                <ImageView
+                    android:id="@+id/imaggfdfeView8"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@mipmap/start_gray_cal" />
+
+
+                <TextView
+                    style="@style/Indicaciones"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 Reseñas"
+                    />
+
+
+
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:id="@+id/imaggfdfeVieeew8"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   app:srcCompat="@mipmap/icono_atencion_cliente"
+                   android:layout_marginRight="6dp"/>
+
+
+
+               <TextView
+                   style="@style/Texto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="01 55 5555 5555"
+                   />
+
+           </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imaggfdfeVierreew8"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@mipmap/icono_ubicacion_color"
+                    android:layout_marginRight="6dp"/>
+
+
+
+                <TextView
+                    style="@style/Texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avenida San Fernando 482, Tlalpan Centro I, 14000 CDMX"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imaggfdfeVsfieeew8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@mipmap/icono_inicio"
+                    android:layout_marginRight="6dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/verde"
+                    android:lineSpacingExtra="-4sp"
+                    android:text="Servicio a domicilio"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Productos por comprar"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/bepp"
+                android:lineSpacingExtra="-4sp"
+                android:text="Ketorolaco 30 Mg "
+                />
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caja con 20 tabletas "
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+
+
+                <Button
+                    android:id="@+id/button_menos"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@mipmap/icono_catidad_menos"/>
+
+
+                <TextView
+                    android:id="@+id/text_cantidad"
+                    android:layout_width="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="-4sp"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/button_mas"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@mipmap/icono_cantidad_mas"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_siguente_cotizar_finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/bepp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+
+        <TextView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blanco"
+            android:gravity="end"
+            android:text="SIGUENTE"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icono_siguiente_blanco"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

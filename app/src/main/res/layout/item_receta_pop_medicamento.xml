@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_pop_medicamento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColorPress"
+        android:gravity="center"
+        android:tag="Bottom3">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/text_pop_medicamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bepp"
+            android:lineSpacingExtra="-4sp"
+            android:paddingLeft="16dp"
+            android:text="Ampicilina 30 Mg "
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center_vertical"
+            >
+
+
+
+
+
+            <Button
+                android:id="@+id/button_menos"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@mipmap/icono_catidad_menos"/>
+
+
+            <TextView
+                android:id="@+id/text_cantidad"
+                android:layout_width="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="-4sp"
+                android:textColor="@color/texto"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_mas"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@mipmap/icono_cantidad_mas"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

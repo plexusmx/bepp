@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bepp.com.bepp">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_bepp_blank"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_bepp_blank"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".slides.SlidesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/statusBlack" />
+        <activity
+            android:name=".activities.ChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/statusBlack" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.RecoverPassActivity"
+            android:label="Restablecer contraseña"
+            android:parentActivityName=".activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RegistroMenuActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.RegistroPacienteActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.RegisterApproved"
+            android:theme="@style/SplashTheme" />
+        <activity android:name=".popUps.RegistroPopUp" />
+        <activity
+            android:name=".menus.HomeActivityMenu"
+            android:label="BEPP"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.AtencionClienteActivity"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.ConfigurationActivity"
+            android:label="Configuraciones"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.EditPacienteActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.EditEmailActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity android:name=".activities.MetodoPagoActivity" />
+        <activity
+            android:name=".activities.AgregarTarjetaActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.CodigoBarrasActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.LoginOpcionActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.FacturacionActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.DireccionEnvioActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.FacturacionMainActivity"
+            android:label="Facturación"
+            android:parentActivityName=".activities.ConfigurationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ConfigurationActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DireccionEnvioMainActivity"
+            android:label="Dirección de envío"
+            android:parentActivityName=".activities.ConfigurationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ConfigurationActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MetodoPagoMainActivity"
+            android:label="Método de pago"
+            android:parentActivityName=".activities.ConfigurationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ConfigurationActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AmigosFamiliaresMainActivity"
+            android:label="Amigos y Familiares"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.AmigosFamiliaresActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.DirectorioMedicoActivity"
+            android:label="Directorio Médico"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activities.BusquedaMaps"
+            android:label="@string/title_activity_busqueda_maps" />
+        <activity
+            android:name=".activities.MessagesActivity"
+            android:label="Notificaciones"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.EditFacturacionActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.MisDoctoresMainActivity"
+            android:label="Mis Médicos"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.MisDoctoresActivity"
+            android:label="Mi Médico"
+            android:parentActivityName=".activities.MisDoctoresMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MisDoctoresMainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RecetaMainActivity"
+            android:label="Mis Recetas"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.DetalleRecetaActivity"
+            android:label="Detalle de la Receta"
+            android:parentActivityName=".activities.RecetaMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.RecetaMainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RecetaEnvioOpcionMainActivity"
+            android:label="Beppear tu Receta"
+            android:parentActivityName=".activities.DetalleRecetaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DetalleRecetaActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ResultadoFarmaciasActivity"
+            android:label="Beppear tu Receta"
+            android:parentActivityName=".activities.LugarEnvioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LugarEnvioActivity" />
+        </activity>
+        <activity
+            android:name=".activities.FarmaciaRecetaActivity"
+            android:label="Beppear tu Receta"
+            android:parentActivityName=".activities.ResultadoFarmaciasActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ResultadoFarmaciasActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DetalleCompraActivity"
+            android:label="Confirma tu Compra"
+            android:parentActivityName=".activities.FarmaciaRecetaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.FarmaciaRecetaActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CompraExitosaActivity"
+            android:label="BEPP Exitoso" />
+        <activity android:name=".activities.HistorialCompraActivity" />
+        <activity
+            android:name=".activities.HistorialCompraMainActivity"
+            android:label="Historial de compra"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.HistorialClinicoMainActivity"
+            android:label="Historial clínico"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activities.HistorialClinicoActivity"
+            android:theme="@style/ThemeXYZ" />
+        <activity android:name=".activities.MapaSearch" />
+        <activity
+            android:name=".activities.AlarmaActivity"
+            android:label="Configuracion tratamiento"
+            android:theme="@style/ThemeXYZ" />
+        <activity
+            android:name=".activities.AlarmMainActivity"
+            android:label="Tratamientos"
+            android:parentActivityName=".menus.HomeActivityMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menus.HomeActivityMenu" />
+        </activity>
+
+        <!-- Declare  Alarm Broadcast receiver here -->
+
+
+        <!-- Declare  Alarm Notification Service here -->
+        <service android:name=".alarm.AlarmNotificationService" />
+
+        <!-- Declare  Alarm Sound Service here -->
+        <service android:name=".alarm.AlarmSoundService" />
+
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.DirectorioMedicoEspecialidadActivity"
+            android:label="Directorio Médico"
+            android:parentActivityName=".activities.DirectorioMedicoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DirectorioMedicoActivity" />
+        </activity>
+        <activity
+            android:name=".activities.LugarEnvioActivity"
+            android:label="Beppear tu Receta"
+            android:parentActivityName=".activities.RecetaEnvioOpcionMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.RecetaEnvioOpcionMainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CobroActivity"
+            android:label="Pago en Linea"
+            android:parentActivityName=".activities.DetalleCompraActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DetalleCompraActivity" />
+        </activity>
+        <activity android:name=".activities.SeleccionPagoActivity" />
+        <activity
+            android:name=".activities.DireccionEnvioRecetaActivity"
+            android:label="Selección Dirección" />
+        <activity
+            android:name=".activities.SeleccionPagoRecetaActivity"
+            android:label="Selección de Pago" />
+        <activity
+            android:name=".activities.FacturacionRecetaDetalleActivity"
+            android:label="Selección de Facturación" />
+        <activity android:name=".activities.RecogerAFarmaciaActivity" />
+        <activity
+            android:name=".activities.MedicinasRecetasActivity"
+            android:label="Tu Receta" />
+        <activity android:name=".activities.FarmaciasDistanciaActivity" />
+        <activity
+            android:name=".activities.AmigoFamiliaActivity"
+            android:label="Amigo o Familiar"
+            android:parentActivityName=".activities.AmigosFamiliaresMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AmigosFamiliaresMainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ResultadosMedicoActivity"
+            android:label="Directorio Médico">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DirectorioMedicoActivity" />
+        </activity>
+        <activity android:name=".activities.RecogerFarmaciaMapaActivity" />
+        <activity android:name=".activities.DetalleCompraNoFacturaActivity"></activity>
+    </application>
+
+</manifest>

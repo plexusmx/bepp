@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.CodigoBarrasActivity">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_escanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_escanner"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="16dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/imagecancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/icono_cerrar" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp">
+
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:text="Escanea el código" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_indicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar_escanner"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/text_indicaciones"
+                style="@style/Indicaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Da clic en boton ESCANEAR y coloca el código de barras en el área selañada "
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/layout_indicaciones"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_ahorro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/f_ahorro_black"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#c1cad3"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_berna"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dp"
+            android:padding="6dp"
+
+            android:src="@drawable/f_bernavides_black"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_imagffe"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/f_berna"/>
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/f_berna_select"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_escanner"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="ESCANEAR"
+        android:textColor="@color/blanco"
+        android:layout_gravity="center_vertical"
+
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+

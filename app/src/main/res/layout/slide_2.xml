@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+    android:background="@color/blanco"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/imagenstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cotiza al momento"
+            style="@style/TTulo" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/texto_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/imagenstore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:src="@mipmap/ornamenta_oraciones"/>
+
+
+
+        <TextView
+            android:id="@+id/genera_lista"
+            style="@style/Texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Compara al momento el costo de tus medicamentos en las diferentes farmacias que hay en la zona de
+tu elección." />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/texto_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/texto_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:src="@mipmap/ornamenta_oraciones"/>
+
+
+
+        <TextView
+            android:id="@+id/cotiza_entre"
+            style="@style/Texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Evalúa y eficienta tu tiempo sin translados, ni filas; siempre con el mejor precio." />
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_above="@+id/imagenstore"
+        android:src="@mipmap/ilustraci_n_ahorro"
+        android:layout_marginBottom="36dp"/>
+
+
+
+</RelativeLayout>

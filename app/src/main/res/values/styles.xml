@@ -1,0 +1,217 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:colorBackground">@color/azulbepp</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+
+    </style>
+
+    <style name="Dialogos" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:colorBackground">@color/azulbepp</item>
+        <item name="android:windowBackground">@drawable/dialogs</item>
+        <item name="android:fontFamily">sans-serif</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <style name="ThemeXYZ" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/pasive_color</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="submitBackground">@color/azulcielo</item>
+        <item name="queryBackground">@color/accion</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    <style name="statusBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/pasive_color</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Custom" parent="@style/Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TTulo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/bepp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TTuloToolbar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="Precios">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/verde</item>
+        <item name="android:lineSpacingExtra">-6sp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Acciones">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/acento</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="FarmaciasMedicamentos">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/bepp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="AccionesLista">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+    </style>
+
+    <style name="IndicacionesCard">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/perla</item>
+    </style>
+
+    <style name="InputActivo">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/oxford</item>
+    </style>
+
+    <style name="Texto">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+    </style>
+
+    <style name="IndicaciNLista">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/perla</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+    </style>
+
+    <style name="TextoBotN">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="AcciNSecundaria">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/perla</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="AcciNPrincipal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/acento</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextoBotNSecundario">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/acento</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Indicaciones">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/perla</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+    </style>
+
+    <style name="TextoToast">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="LeyendaTRminos">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Alertas">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/error</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="bepp.com.bepp.activities.SeleccionPagoRecetaActivity">
+
+    <TextView
+        style="@style/AccionesLista"
+        android:id="@+id/texto_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metódos de pago"
+        />
+
+    <ListView
+        android:id="@+id/list_tarjetas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/texto_titulo"
+        android:layout_above="@+id/layout_btns">
+
+
+    </ListView>
+
+
+
+
+
+
+
+<LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:gravity="end">
+
+
+        <Button
+            android:id="@+id/btn_cotizar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_cotihhzar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:text="+ NUEVO METÓDO DE PAGO"
+            android:textColor="@color/blanco" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.EditPacienteActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_tu_registro"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="20"
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_apellidoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_nombre"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_apellidoP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Apellido Paterno"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="15"
+
+
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_apellidoM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_apellidoP"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_apellidoM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Apellido Materno (Opcional)"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="15"
+                android:drawableStart="@mipmap/icono_usuario"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_apellidoM"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Correo electrónico"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+
+                android:drawableStart="@mipmap/icono_correo"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/layout_paciente_movil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_paciente_correo"
+            android:layout_marginTop="24dp"
+            app:hintEnabled="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+
+                android:id="@+id/text_paciente_movil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pasive_color"
+                android:textColorHint="@color/pasive_color"
+                android:hint="Móvil"
+                android:inputType="number"
+                android:paddingBottom="12dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:maxLength="13"
+                android:drawableStart="@mipmap/icono_movil"
+                android:drawablePadding="6dp"
+
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

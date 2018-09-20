@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.ChooseActivity">
+
+
+    <Button
+        android:id="@+id/inicio_sesion"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:text="INICIA SESIÓN"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_below="@+id/parafo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+
+        />
+    <Button
+        android:id="@+id/registrate"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:text="REGÍSTRATE"
+        android:textColor="@color/azulbepp"
+        android:background="@drawable/button_bg_rounded_only_corners"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@+id/inicio_sesion"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/logobepp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        app:srcCompat="@mipmap/logo_bepp_blank" />
+
+    <LinearLayout
+        android:id="@+id/layouttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/logobepp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titulobest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/bepp"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="center_horizontal"
+            android:text="Best Pharmacy Price" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parafo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouttitulo"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="6dp"
+
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/perla"
+            android:lineSpacingExtra="-4sp"
+            android:gravity="center_horizontal"
+            android:text="Tus medicamentos al mejor precio"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

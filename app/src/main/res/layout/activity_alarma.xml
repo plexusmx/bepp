@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bepp.com.bepp.activities.AlarmaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginRight="16dp">
+
+
+
+                <ImageView
+                    android:id="@+id/imagecancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/icono_cerrar" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp">
+
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:text="Tratamiento" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="16dp">
+
+
+                <ImageView
+                    android:id="@+id/save_alarm_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/icono_guardar" />
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_scrol_form"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:id="@+id/content_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/content_scrol_form"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                style="@style/Indicaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="Asegúrate de llenar los campos correctamente para programar tu tratamiento."
+                />
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/layout_medicamento_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tu_registro"
+                android:layout_marginTop="24dp"
+                app:hintEnabled="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+
+                    android:id="@+id/text_alarma_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pasive_color"
+                    android:textColorHint="@color/pasive_color"
+                    android:hint="Medicamento"
+                    android:inputType="text"
+                    android:paddingBottom="12dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="20"
+                    android:drawableStart="@mipmap/icono_medicamentos"
+                    android:drawablePadding="6dp"
+
+                    android:text="" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/layout_paciente_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tu_registro"
+                android:layout_marginTop="24dp"
+                app:hintEnabled="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+
+                    android:id="@+id/text_cantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pasive_color"
+                    android:textColorHint="@color/pasive_color"
+                    android:hint="Cantidad"
+                    android:inputType="text"
+                    android:paddingBottom="12dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="20"
+                    android:drawableStart="@mipmap/icono_medicamentos"
+                    android:drawablePadding="6dp"
+
+                    android:text="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                style="@style/IndicaciNLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Duración del tratamiento"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icono_horas"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tomar cada"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:id="@+id/layout_horas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true">
+
+                        <EditText
+
+                            android:id="@+id/text_hora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pasive_color"
+                            android:textColorHint="@color/pasive_color"
+                            android:hint="1"
+                            android:inputType="number"
+                            android:paddingBottom="12dp"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:maxLength="20"
+                            android:drawablePadding="6dp"
+                            android:textAlignment="center"
+
+                            android:text="1" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="horas"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icono_dias"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Durante"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:id="@+id/layout_paciente_nombsre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true">
+
+                        <EditText
+
+                            android:id="@+id/text_dias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pasive_color"
+                            android:textColorHint="@color/pasive_color"
+                            android:hint="5"
+                            android:inputType="number"
+                            android:paddingBottom="12dp"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:maxLength="20"
+                            android:drawablePadding="6dp"
+                            android:textAlignment="center"
+
+                            android:text="2" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        style="@style/Texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="días"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

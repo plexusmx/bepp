@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+map:uiZoomControls="true"
+map:uiZoomGestures="true"
+map:mapType="normal"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:id="@+id/relative_xp"
+tools:context=".activities.RecogerFarmaciaMapaActivity">
+
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+
+    <include layout="@layout/toolbar_search" />
+
+
+</fragment>
+
+
+
+
+<!-- <android.support.design.widget.FloatingActionButton
+     android:id="@+id/btnFloatingAction"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/cardView"
+     android:layout_alignEnd="@+id/cardView"
+     android:layout_gravity="bottom|end"
+     android:background="@color/blanco"
+     android:backgroundTint="@color/blanco"
+     android:src="@drawable/ic_gps_lime"
+     android:tint="@color/azulbepp"
+     android:layout_marginRight="8dp"/>
+     -->
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_above="@+id/linearLayout4"
+    android:background="@color/blanco"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/strong_grey"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            tools:text="Calle" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_above="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mid_grey"
+            android:textSize="14sp"
+            tools:text="México" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_direccion"
+            android:background="@color/colorAccent"
+            android:textColor="@color/blanco"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Siguente" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:id="@+id/linearLayout4"
+    android:layout_marginRight="16dp">
+
+    <Button
+        android:id="@+id/Bzoomin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="onZoom"
+        android:backgroundTint="@color/blanco"
+
+        android:text="+" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:id="@+id/Bzoomout"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/blanco"
+
+        android:onClick="onZoom" />
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/pin_center"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/pin_map"
+    android:layout_above="@+id/centrolay"/>
+<LinearLayout
+    android:id="@+id/centrolay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"/>
+
+
+
+</RelativeLayout>

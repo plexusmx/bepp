@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="bepp.com.bepp.activities.MetodoPagoActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/contentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+
+        <EditText
+            android:id="@+id/txtinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Agregar nueva forma de pago"
+            android:layout_alignBaseline="@+id/btnadd"
+            android:layout_alignBottom="@+id/btnadd"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+
+            android:layout_toRightOf="@+id/txtinput"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_below="@id/contentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+
+
+
+
+    </ListView>
+
+</RelativeLayout>
